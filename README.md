@@ -4,7 +4,7 @@
 
 1. Вероятности образования <i>бета</i>-частиц с энергией <b>E</b> в единицу времени, можно описать приближенно формулой:
 
-![alt tag](https://github.com/dep24/M_DGW_3/blob/master/Screenshot_20170414_215925.png)
+![alt tag](https://github.com/dep24/M_DGW_3/blob/master/res/Screenshot_20170414_215925.png)
 
   где <b>m<sub>0</sub>c<sup>2</sup></b> = 0.511 МэВ, <b>Е<sub>max</sub></b> -максимальная энергия бета-спектра, а <b>Е</b> - возможная энергия бета-частицы 0 < E < E<sub>max</sub>
 

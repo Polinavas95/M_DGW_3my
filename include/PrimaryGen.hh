@@ -19,7 +19,8 @@ class G4Event;
 class PrimaryGen : public G4VUserPrimaryGeneratorAction
 {
 private:
-
+    G4ParticleGun * gun;
+    G4int i;
 public:
     PrimaryGen();
     virtual ~PrimaryGen();

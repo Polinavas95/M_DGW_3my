@@ -2,7 +2,7 @@
 #include <Randomize.hh>
 #include <G4Electron.hh>
 #include "PrimaryGen.hh"
-
+using namespace std;
 
 
 PrimaryGen::PrimaryGen()
@@ -17,6 +17,23 @@ PrimaryGen::~PrimaryGen() {
 
 void PrimaryGen::GeneratePrimaries(G4Event* anEvent)
 {
+
+    G4int size=10;
+    E = Emax * G4UniformRand()*keV;
+    for(int i=0;i<size;i++) {
+
+        dE = (E/Emax)*keV;
+
+        f=(1+Emax/m0c)*sqrt(pow(1+E/m0c,2)-1)*pow(((Emax-E)/m0c),2)*dE;
+
+        cout<<"E= "<<E<<" ; "<<"dE = "<<dE<<" ; "<<" f(E)="<<f<<endl;
+       E=dE+E;
+      sum= f+=f;
+    }
+    cout<<"Fsum= "<<sum<<endl;
+
+
+
     G4double q1=2 * G4UniformRand() - 1;
     G4double q2=2 * G4UniformRand() - 1;
     G4double q3=2 * G4UniformRand() - 1;

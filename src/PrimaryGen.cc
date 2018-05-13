@@ -87,7 +87,7 @@ G4double P=G4UniformRand();
 //    gun->SetParticlePosition(G4ThreeVector( 100.*cm,0,0));
         gun->SetParticlePosition(
                 G4ThreeVector(100. * cm +X1, Y1,Z1));
-        gun->SetParticleEnergy(545. * keV);
+        gun->SetParticleEnergy(EBeta * keV);
         gun->SetParticleMomentumDirection(G4ThreeVector(q1 / l, q2 / l, q3 / l));
         gun->GeneratePrimaryVertex(anEvent);
 }
